@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    @apply bg-navy-950 text-navy-100 font-sans;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-navy-900/60 backdrop-blur-md border border-navy-700/50 rounded-xl;
+  }
+  .glass-panel-light {
+    @apply bg-navy-800/40 backdrop-blur-sm border border-navy-600/40 rounded-lg;
+  }
+  .data-label {
+    @apply text-[10px] uppercase tracking-[0.15em] text-navy-300 font-medium;
+  }
+  .data-value {
+    @apply font-mono text-sm text-navy-50;
+  }
+  .nav-tab {
+    @apply relative px-4 py-2.5 text-sm font-medium transition-all duration-200;
+  }
+  .nav-tab-active {
+    @apply text-cyan-300;
+  }
+  .nav-tab-inactive {
+    @apply text-navy-300 hover:text-navy-100;
+  }
+  .btn-primary {
+    @apply px-4 py-2 bg-cyan-500 hover:bg-cyan-400 text-navy-950 font-semibold text-sm rounded-lg transition-colors duration-200 flex items-center gap-2;
+  }
+  .btn-secondary {
+    @apply px-4 py-2 bg-navy-700/60 hover:bg-navy-600/60 text-navy-100 font-medium text-sm rounded-lg border border-navy-600/50 transition-colors duration-200 flex items-center gap-2;
+  }
+  .btn-ghost {
+    @apply px-3 py-1.5 text-navy-300 hover:text-navy-100 hover:bg-navy-700/40 text-sm rounded-md transition-colors duration-200 flex items-center gap-2;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: rgba(15, 38, 69, 0.3);
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: rgba(46, 95, 149, 0.5);
+    border-radius: 3px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: rgba(46, 95, 149, 0.8);
+  }
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #1f4775;
+  height: 4px;
+  border-radius: 2px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -5px;
+  background: #22d3ee;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(34, 211, 238, 0.5);
+}
+input[type="range"]::-moz-range-track {
+  background: #1f4775;
+  height: 4px;
+  border-radius: 2px;
+}
+input[type="range"]::-moz-range-thumb {
+  background: #22d3ee;
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 0 8px rgba(34, 211, 238, 0.5);
+}
