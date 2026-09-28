@@ -1,10 +1,10 @@
-# AegisOcean
+# Seascan AI
 
-AegisOcean is a modern React + TypeScript dashboard for monitoring and analyzing oceanic anomalies, environmental patterns, and maritime intelligence. The application brings together overview metrics, anomaly mapping, and deep-dive analysis in a clean, interactive interface.
+Seascan AI is a modern React + TypeScript dashboard for monitoring and analyzing oceanic anomalies, environmental patterns, and maritime intelligence. The application brings together overview metrics, anomaly detection, and real-time analytic insights for marine conditions.
 
 ## Overview
 
-This repository contains the frontend application for AegisOcean, built with Vite, React, Tailwind CSS, and 3D visualization tooling. It is designed to help users:
+This repository contains the frontend application for Seascan AI, built with Vite, React, Tailwind CSS, and 3D visualization tooling. It is designed to help users:
 
 - monitor high-level system and ocean conditions,
 - explore anomaly patterns on a map,
@@ -71,8 +71,8 @@ This repository contains the frontend application for AegisOcean, built with Vit
 4. Start the development server
 
 ```bash
-git clone https://github.com/gnaneswari109-boop/aegisocean.git
-cd aegisocean/project
+git clone https://github.com/gnaneswari109-boop/seascan-ai.git
+cd seascan-ai/project
 npm install
 npm run dev
 ```
